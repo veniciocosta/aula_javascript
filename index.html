@@ -6,11 +6,28 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
 
-    <body>
-        <button onclick="primeira_acao()">Clique aqui</button>
-        <button onclick="teste_idade()">Teste de idade</button>
+    <body id="corpo">
+        
+        <button type="button" onclick="primeira_acao()">Mensagem</button>
+        <p></p>
+        <button id="btnTeste" type="button" onclick="elementoID()">Clique aqui</button>
+        <p></p>
 
-        <p onmouseover="passou_mouse(this)">Passe o mouse aqui</p>
+        <button id="btnSite" type="button" onclick="outroSite()">Ir para o Google</button>
+        <p></p>
+        
+        <p onmouseover="passou_mouse(this)" onmouseout="tirou_mouse(this)">Passe o mouse aqui</p>
+        <p id="textodois" onmouseover="passou_mouse(this)" onmouseout="tirou_mouse(this)">Passe o mouse aqui também</p>
+       
+        <select onchange="extrairData(this)">
+            <option value="1">Dia</option>
+            <option value="2">Mês</option>
+            <option value="3">Ano</option>
+            <option value="4">Dia da semana</option>
+        </select>
+
+        <p id="dataEscolha">Data</p>
+        
     </body>
 
 </html>
